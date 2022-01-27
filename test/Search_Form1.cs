@@ -14,11 +14,9 @@ namespace test
     {
         Locale myselect;
 
-
-
-        public static readonly Order_Form3 orderForm3 = new Order_Form3();
-        public static readonly Home_Form1 homeForm1 = new Home_Form1();
-        public static readonly Menu_Form1 menuForm1 = new Menu_Form1();
+        public static Order_Form3 orderForm3 = new Order_Form3();
+        public static Home_Form1 homeForm1 = new Home_Form1();
+        public static Menu_Form1 menuForm1 = new Menu_Form1();
         //세션
         static public string session;
 
@@ -35,9 +33,14 @@ namespace test
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            this.Visible=false;
-            menuForm1.Show();
+            this.Visible=false; 
             menuForm1.SetText(session);
+            //menuForm1.setObj(myselect);
+            DataManager.myselect = myselect;
+            menuForm1.Show();
+
+            //orderForm3.setObj(myselect);
+            //orderForm3.ShowDialog();
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)

@@ -46,7 +46,7 @@ namespace test
         // 회원 가입 DB연동
         private void signUp()
         {
-            var connectionString = "server=localhost;user=root;database=burgerking;password=1234";
+            var connectionString = "server=localhost;port=2421;database=burgerking;password=1234";
             var connection = new MySqlConnection(connectionString);
             //string insertQuery = "INSERT INTO burgerkingmember(name,id,pw,address) values ('2','24','13df','134f')";
             //string insertQuery = $"INSERT INTO burgerkingmember(name,id,pw,address) values{name},{ID},{PW},{address}";
@@ -83,7 +83,7 @@ namespace test
             string id = textBox_ID.Text;
             string dbid = "";
 
-            var connectionString = "server=localhost;user=root;database=burgerking;password=1234";
+            var connectionString = "server=localhost;port=2421;database=burgerking;password=1234";
             var connection = new MySqlConnection(connectionString);
             try
             {

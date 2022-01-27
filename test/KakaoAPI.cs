@@ -39,7 +39,10 @@ namespace test
                 double x = double.Parse(docs[i]["x"]);
                 double y = double.Parse(docs[i]["y"]);
                 int dis = int.Parse(docs[i]["distance"]);
-                mls.Add(new Locale(lname, y, x, dis));
+                string phone = docs[i]["phone"];
+                string address = docs[i]["road_address_name"];
+
+                mls.Add(new Locale(lname, y, x, dis, phone, address));
             }
             return mls;
         }

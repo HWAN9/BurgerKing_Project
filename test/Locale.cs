@@ -12,13 +12,17 @@ namespace test
         public double Lat { get; set; }
         public double Lng { get; private set; } // 수정안되고 get만 가능
         public double Distance { get; set; }
+        public string Phone { get; set; }
+        public string Address { get; set; }
 
-        public Locale(string name, double lat, double lng, int dis)
+        public Locale(string name, double lat, double lng, int dis, string ph, string add)
         {
             Name = name;
             Lat = lat;
             Lng = lng;
             Distance = dis;
+            Phone = ph;
+            Address = add;
         }
 
         public override string ToString()

@@ -17,6 +17,7 @@ namespace test
         public List<Menu> Burger = new List<Menu>();
         //세션
         static public string session;
+        static public Locale store_obj;
 
         public Menu_Form1()
         {
@@ -157,10 +158,19 @@ namespace test
         {
             this.Visible = false;
             guna2DataGridView1.DataSource = null;
-            orderForm3.Show();
             orderForm3.SetText(session);
+            orderForm3.setObj();
+            orderForm3.Show();
         }
 
+        public void setObj(Locale myselect)
+        {
+             store_obj = myselect;
+
+            //gunaLabel20.Text = store_obj.Name;
+            //gunaLabel19.Text = store_obj.Phone;
+            //gunaLabel18.Text = store_obj.Address;
+        }
 
         internal void SetText(string text)
         {

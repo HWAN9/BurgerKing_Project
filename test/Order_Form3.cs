@@ -42,6 +42,15 @@ namespace test
 
         }
 
+        public void setObj()
+        {
+            Locale store_obj = DataManager.myselect;
+
+            gunaLabel20.Text = store_obj.Name;
+            gunaLabel19.Text = store_obj.Phone;
+            gunaLabel18.Text = store_obj.Address;
+        }
+
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
             this.Visible=false;
@@ -70,7 +79,7 @@ namespace test
             string dbname = "";
             string dbphone_num = "";
             string dbaddress = "";
-            var connectionString = "server=localhost;user=root;database=burgerking;password=1234";
+            var connectionString = "server=localhost;port=2421;user=root;database=burgerking;password=1234";
             var connection = new MySqlConnection(connectionString);
             string insertQuery = $"SELECT * FROM member where id='{id}'";
 
@@ -132,6 +141,11 @@ namespace test
         private void gunaLabel20_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaPictureBox3_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

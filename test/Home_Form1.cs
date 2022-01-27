@@ -95,8 +95,8 @@ namespace test
         private void gunaButton3_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            searchForm1.Show();
             searchForm1.SetText(session);
+            searchForm1.Show();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

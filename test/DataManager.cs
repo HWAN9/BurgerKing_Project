@@ -23,12 +23,15 @@ namespace test
         const string TABLE2 = "ORDER_MENU";
         public static List<ORDER_MENU> ORDERList = new List<ORDER_MENU>();
 
+        public static Locale myselect;
+        public static string session;
+
         public static void ConnectDB()
         {
             try
             {
                 string pwd = "1234";
-                string strConn = "Server=localhost;Database=burgerking;Uid=root;Pwd=" + pwd + ";Charset=utf8";
+                string strConn = "Server=localhost;port=2421;Database=burgerking;Uid=root;Pwd=" + pwd + ";Charset=utf8";
                 Myconn = new MySqlConnection(strConn);
                 Myconn.Open();
             }

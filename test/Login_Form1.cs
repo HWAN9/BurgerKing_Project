@@ -51,7 +51,7 @@ namespace test
             string id = gunaTextBox1.Text;
             string pw = gunaTextBox2.Text;
             string dbpw = "";
-            var connectionString = "server=localhost;user=root;database=burgerking;password=1234";
+            var connectionString = "Server=localhost;Port=2421;Database=burgerking;Uid=root;Pwd=1234";
             var connection = new MySqlConnection(connectionString);
             string insertQuery = $"SELECT pw FROM member where id='{id}'";
 
