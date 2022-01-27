@@ -14,7 +14,6 @@ namespace test
     public partial class Order_Form3 : Form
     {
         public Menu_Form1 menuForm1 = new Menu_Form1();
-        public static Order_Form2 orderForm2 = new Order_Form2();
         public static Search_Form1 searchForm1 = new Search_Form1();
         public static Home_Form1 homeForm1 = new Home_Form1();
         //세션 아이디
@@ -23,6 +22,7 @@ namespace test
         public Order_Form3()
         {
             InitializeComponent();
+
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
@@ -46,6 +46,23 @@ namespace test
         {
             Locale store_obj = DataManager.myselect;
             menuForm1 = m;
+
+            if(DataManager.myList.Count>1)
+            {
+                gunaLabel26.Text = DataManager.myList[0].name + "외";
+            }
+            else
+            {
+                gunaLabel26.Text = DataManager.myList[0].name;
+            }
+            int sum = 0;
+                foreach (Menu item in DataManager.myList)
+                {
+                    sum += int.Parse(item.price);
+                }
+                gunaLabel28.Text = sum.ToString();
+
+
             gunaLabel20.Text = store_obj.Name;
             gunaLabel19.Text = store_obj.Phone;
             gunaLabel18.Text = store_obj.Address;
@@ -127,7 +144,8 @@ namespace test
         private void gunaButton2_Click_1(object sender, EventArgs e)
         {
             Hide();
-            menuForm1.Close();
+            menuForm1.OrderClose();
+            Order_Form2 orderForm2 = new Order_Form2();
             orderForm2.setText(session);
             orderForm2.ShowDialog();
             Close();

@@ -26,12 +26,15 @@ namespace test
         {
             InitializeComponent();
             DataManager.selectQuery();
+            pictureBox7.Click += gunaButton4_Click;
         }
 
 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+
+            SetText(DataManager.session);
             if (pictureBox1.Visible == true)
             {
                 pictureBox1.Visible = false;
@@ -54,10 +57,12 @@ namespace test
             }
         }
 
+
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             this.Visible= false;
-            loginForm1.Show();
+            loginForm1.ShowDialog();
+            Show();
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
@@ -68,8 +73,10 @@ namespace test
         private void gunaButton5_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            loginForm2.Show();
-            
+            loginForm2.ShowDialog();
+            SetText(DataManager.session);
+            this.Visible = true;
+
         }
 
         private void Home_Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -79,8 +86,11 @@ namespace test
 
         private void gunaButton4_Click(object sender, EventArgs e)
         {
-            
-        
+            Hide();
+            Order_Form2 frm = new Order_Form2();
+            frm.ShowDialog();
+            SetText(DataManager.session);
+            Show();
         }
 
         private void gunaPictureBox1_MouseClick(object sender, MouseEventArgs e)
@@ -97,7 +107,7 @@ namespace test
             this.Visible = false;
             searchForm1.SetText(session);
             searchForm1.ShowDialog();
-            Close();
+            Show();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -112,6 +122,7 @@ namespace test
         public void SetText(string data)
         {
             session = data;
+            DataManager.session = data;
             //MessageBox.Show("" + session);
 
             if (session != null)
@@ -128,19 +139,20 @@ namespace test
             }
         }
 
-        private void gunaButton7_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void gunaLabel14_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void gunaLabel13_Click(object sender, EventArgs e)
+
+        private void Home_Form1_Shown(object sender, EventArgs e)
         {
 
+        }
+
+        private void Home_Form1_Activated(object sender, EventArgs e)
+        {
+           // SetText(DataManager.session);
         }
     }
 }

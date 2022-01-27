@@ -42,7 +42,8 @@ namespace test
         private void gunaButton2_Click(object sender, System.EventArgs e)
         {
             this.Visible = false;
-            loginForm2.Show();
+            loginForm2.ShowDialog();
+            Close();
 
         }
 
@@ -91,18 +92,21 @@ namespace test
                         //화면 이동
                         Hide();
                         Home_Form1 home = new Home_Form1();
+                        DataManager.session = id;
                         home.SetText(id);
                         home.ShowDialog();
                         Close();
                     }
                     else
                     {
+                        DataManager.session = "";
                         MessageBox.Show("비밀번호가 틀렸습니다.");
                     }
                 }
 
                 else
                 {
+                    DataManager.session = "";
                     MessageBox.Show("잘못된 ID 입니다.");
                 }
 
@@ -113,6 +117,15 @@ namespace test
                 //label3.Text = "Disconnected";
             }
             connection.Close();
+        }
+
+        private void gunaButton3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Search_Form1 searchForm1 = new Search_Form1();
+            searchForm1.SetText(null);
+            searchForm1.ShowDialog();
+            Close();
         }
     }
 }

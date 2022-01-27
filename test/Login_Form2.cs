@@ -46,7 +46,7 @@ namespace test
         // 회원 가입 DB연동
         private void signUp()
         {
-            var connectionString = "server=localhost;port=2421;database=burgerking;password=1234";
+            var connectionString = "Server=localhost;Port=2421;Database=burgerking;Uid=root;Pwd=1234";
             var connection = new MySqlConnection(connectionString);
             //string insertQuery = "INSERT INTO burgerkingmember(name,id,pw,address) values ('2','24','13df','134f')";
             //string insertQuery = $"INSERT INTO burgerkingmember(name,id,pw,address) values{name},{ID},{PW},{address}";
@@ -83,7 +83,7 @@ namespace test
             string id = textBox_ID.Text;
             string dbid = "";
 
-            var connectionString = "server=localhost;port=2421;database=burgerking;password=1234";
+            var connectionString = "Server=localhost;Port=2421;Database=burgerking;Uid=root;Pwd=1234";//"server=localhost;port=2421;database=burgerking;password=1234";
             var connection = new MySqlConnection(connectionString);
             try
             {
@@ -138,6 +138,7 @@ namespace test
             catch (Exception ex)
             {
                 //label1.Text = "Disconnected";
+                throw new Exception(ex.Message + "경로\n" + ex.StackTrace);
             }
             connection.Close();
         }
@@ -197,15 +198,7 @@ namespace test
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
-            string name = textBox_ID.Text;
-            string ID = textBox_ID.Text;
-            string PW = textBox_PW.Text;
-            string phone = textBox_Phone.Text;
-            string address = textBox_Address.Text;
-            string email = textBox_Email.Text;
-            string email2 = textBox_Email2.Text;
 
-            signUp();
         }
 
         private void gunaButton5_Click(object sender, EventArgs e)
@@ -217,6 +210,11 @@ namespace test
             string address = textBox_Address.Text;
             string email = textBox_Email.Text;
             string email2 = textBox_Email2.Text;
+            signUp();
+            DataManager.session = ID;
+            Close();
+
+
         }
 
         private void gunaPictureBox1_Click(object sender, EventArgs e)

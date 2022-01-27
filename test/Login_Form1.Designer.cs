@@ -65,7 +65,7 @@
             this.gunaButton4.ForeColor = System.Drawing.Color.White;
             this.gunaButton4.Image = null;
             this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(175, 772);
+            this.gunaButton4.Location = new System.Drawing.Point(250, 1158);
             this.gunaButton4.Margin = new System.Windows.Forms.Padding(0);
             this.gunaButton4.Name = "gunaButton4";
             this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(134)))), ((int)(((byte)(53)))));
@@ -74,7 +74,7 @@
             this.gunaButton4.OnHoverImage = null;
             this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton4.Radius = 24;
-            this.gunaButton4.Size = new System.Drawing.Size(394, 49);
+            this.gunaButton4.Size = new System.Drawing.Size(563, 74);
             this.gunaButton4.TabIndex = 8;
             this.gunaButton4.Text = "돌아가기";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -88,10 +88,10 @@
             this.gunaPanel3.Controls.Add(this.gunaButton3);
             this.gunaPanel3.Controls.Add(this.gunaLabel4);
             this.gunaPanel3.Controls.Add(this.gunaLabel3);
-            this.gunaPanel3.Location = new System.Drawing.Point(75, 536);
-            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaPanel3.Location = new System.Drawing.Point(107, 804);
+            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(600, 222);
+            this.gunaPanel3.Size = new System.Drawing.Size(857, 333);
             this.gunaPanel3.TabIndex = 2;
             // 
             // gunaLabel5
@@ -100,9 +100,10 @@
             this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel5.Font = new System.Drawing.Font("타이포_다방구 B", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(20, 86);
+            this.gunaLabel5.Location = new System.Drawing.Point(29, 129);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(270, 13);
+            this.gunaLabel5.Size = new System.Drawing.Size(396, 19);
             this.gunaLabel5.TabIndex = 8;
             this.gunaLabel5.Text = "회원가입시 맴버쉽 혜택 및 다양한 쿠폰이 제공됩니다.";
             // 
@@ -120,7 +121,7 @@
             this.gunaButton3.ForeColor = System.Drawing.Color.White;
             this.gunaButton3.Image = null;
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(100, 134);
+            this.gunaButton3.Location = new System.Drawing.Point(143, 201);
             this.gunaButton3.Margin = new System.Windows.Forms.Padding(0);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
@@ -129,11 +130,12 @@
             this.gunaButton3.OnHoverImage = null;
             this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton3.Radius = 24;
-            this.gunaButton3.Size = new System.Drawing.Size(394, 49);
+            this.gunaButton3.Size = new System.Drawing.Size(563, 74);
             this.gunaButton3.TabIndex = 7;
             this.gunaButton3.Text = "주문하기";
             this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton3.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
             // gunaLabel4
             // 
@@ -141,9 +143,10 @@
             this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel4.Font = new System.Drawing.Font("타이포_다방구 B", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(20, 65);
+            this.gunaLabel4.Location = new System.Drawing.Point(29, 98);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(231, 13);
+            this.gunaLabel4.Size = new System.Drawing.Size(338, 19);
             this.gunaLabel4.TabIndex = 4;
             this.gunaLabel4.Text = "회원가입 없이 비회원으로 주문이 가능합니다.";
             // 
@@ -153,9 +156,10 @@
             this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel3.Font = new System.Drawing.Font("타이포_다방구 B", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(20, 30);
+            this.gunaLabel3.Location = new System.Drawing.Point(29, 45);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(129, 27);
+            this.gunaLabel3.Size = new System.Drawing.Size(192, 40);
             this.gunaLabel3.TabIndex = 3;
             this.gunaLabel3.Text = "비회원 주문";
             // 
@@ -165,9 +169,10 @@
             this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel1.Font = new System.Drawing.Font("타이포_다방구 B", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(290, 60);
+            this.gunaLabel1.Location = new System.Drawing.Point(414, 90);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(169, 57);
+            this.gunaLabel1.Size = new System.Drawing.Size(253, 87);
             this.gunaLabel1.TabIndex = 1;
             this.gunaLabel1.Text = "로그인";
             // 
@@ -179,10 +184,10 @@
             this.gunaPanel2.Controls.Add(this.gunaTextBox2);
             this.gunaPanel2.Controls.Add(this.gunaTextBox1);
             this.gunaPanel2.Controls.Add(this.gunaLabel2);
-            this.gunaPanel2.Location = new System.Drawing.Point(75, 138);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaPanel2.Location = new System.Drawing.Point(107, 207);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(600, 378);
+            this.gunaPanel2.Size = new System.Drawing.Size(857, 567);
             this.gunaPanel2.TabIndex = 0;
             // 
             // gunaButton2
@@ -199,7 +204,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(100, 290);
+            this.gunaButton2.Location = new System.Drawing.Point(143, 435);
             this.gunaButton2.Margin = new System.Windows.Forms.Padding(0);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
@@ -208,7 +213,7 @@
             this.gunaButton2.OnHoverImage = null;
             this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton2.Radius = 24;
-            this.gunaButton2.Size = new System.Drawing.Size(400, 49);
+            this.gunaButton2.Size = new System.Drawing.Size(571, 74);
             this.gunaButton2.TabIndex = 6;
             this.gunaButton2.Text = "회원가입";
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -229,7 +234,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(0, 0);
-            this.gunaButton1.Location = new System.Drawing.Point(100, 230);
+            this.gunaButton1.Location = new System.Drawing.Point(143, 345);
             this.gunaButton1.Margin = new System.Windows.Forms.Padding(0);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
@@ -238,7 +243,7 @@
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Radius = 24;
-            this.gunaButton1.Size = new System.Drawing.Size(400, 49);
+            this.gunaButton1.Size = new System.Drawing.Size(571, 74);
             this.gunaButton1.TabIndex = 5;
             this.gunaButton1.Text = "로그인";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -256,14 +261,14 @@
             this.gunaTextBox2.FocusedForeColor = System.Drawing.Color.Black;
             this.gunaTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.gunaTextBox2.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaTextBox2.Location = new System.Drawing.Point(18, 146);
-            this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaTextBox2.Location = new System.Drawing.Point(26, 219);
+            this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaTextBox2.MaxLength = 10000;
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '●';
             this.gunaTextBox2.Radius = 10;
             this.gunaTextBox2.SelectedText = "";
-            this.gunaTextBox2.Size = new System.Drawing.Size(563, 52);
+            this.gunaTextBox2.Size = new System.Drawing.Size(804, 78);
             this.gunaTextBox2.TabIndex = 4;
             this.gunaTextBox2.Text = "password";
             this.gunaTextBox2.TextOffsetX = 15;
@@ -282,14 +287,14 @@
             this.gunaTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.gunaTextBox1.ForeColor = System.Drawing.Color.DimGray;
             this.gunaTextBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.gunaTextBox1.Location = new System.Drawing.Point(18, 81);
-            this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaTextBox1.Location = new System.Drawing.Point(26, 122);
+            this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaTextBox1.MaxLength = 10000;
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.Radius = 10;
             this.gunaTextBox1.SelectedText = "";
-            this.gunaTextBox1.Size = new System.Drawing.Size(563, 52);
+            this.gunaTextBox1.Size = new System.Drawing.Size(804, 78);
             this.gunaTextBox1.TabIndex = 3;
             this.gunaTextBox1.Text = "아이디";
             this.gunaTextBox1.TextOffsetX = 15;
@@ -301,9 +306,10 @@
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel2.Font = new System.Drawing.Font("타이포_다방구 B", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(20, 30);
+            this.gunaLabel2.Location = new System.Drawing.Point(29, 45);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(129, 27);
+            this.gunaLabel2.Size = new System.Drawing.Size(192, 40);
             this.gunaLabel2.TabIndex = 2;
             this.gunaLabel2.Text = "일반 로그인";
             // 
@@ -322,8 +328,9 @@
             this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaLinePanel1.LineTop = 25;
             this.gunaLinePanel1.Location = new System.Drawing.Point(0, 0);
+            this.gunaLinePanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaLinePanel1.Name = "gunaLinePanel1";
-            this.gunaLinePanel1.Size = new System.Drawing.Size(750, 880);
+            this.gunaLinePanel1.Size = new System.Drawing.Size(1071, 1320);
             this.gunaLinePanel1.TabIndex = 1;
             // 
             // gunaPictureBox1
@@ -333,30 +340,31 @@
             this.gunaPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(0, -7);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(0, -10);
             this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(114, 105);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(163, 158);
             this.gunaPictureBox1.TabIndex = 30;
             this.gunaPictureBox1.TabStop = false;
             // 
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 28);
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 42);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(750, 20);
+            this.gunaPanel1.Size = new System.Drawing.Size(1071, 30);
             this.gunaPanel1.TabIndex = 9;
             // 
             // Login_Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 880);
+            this.ClientSize = new System.Drawing.Size(1071, 1320);
             this.Controls.Add(this.gunaLinePanel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Login_Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

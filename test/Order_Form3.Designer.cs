@@ -112,7 +112,7 @@
             this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaLinePanel1.LineTop = 25;
             this.gunaLinePanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaLinePanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaLinePanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaLinePanel1.Name = "gunaLinePanel1";
             this.gunaLinePanel1.Size = new System.Drawing.Size(1071, 1320);
             this.gunaLinePanel1.TabIndex = 0;
@@ -148,12 +148,12 @@
             // 
             this.gunaLabel28.AutoSize = true;
             this.gunaLabel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel28.Font = new System.Drawing.Font("타이포_다방구 B", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel28.Font = new System.Drawing.Font("타이포_다방구 B", 8F);
             this.gunaLabel28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
-            this.gunaLabel28.Location = new System.Drawing.Point(454, 681);
+            this.gunaLabel28.Location = new System.Drawing.Point(403, 681);
             this.gunaLabel28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel28.Name = "gunaLabel28";
-            this.gunaLabel28.Size = new System.Drawing.Size(339, 33);
+            this.gunaLabel28.Size = new System.Drawing.Size(189, 19);
             this.gunaLabel28.TabIndex = 47;
             this.gunaLabel28.Text = "------------------";
             // 
@@ -187,12 +187,12 @@
             // 
             this.gunaLabel26.AutoSize = true;
             this.gunaLabel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel26.Font = new System.Drawing.Font("타이포_다방구 B", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel26.Font = new System.Drawing.Font("타이포_다방구 B", 8F);
             this.gunaLabel26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
-            this.gunaLabel26.Location = new System.Drawing.Point(454, 620);
+            this.gunaLabel26.Location = new System.Drawing.Point(403, 620);
             this.gunaLabel26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel26.Name = "gunaLabel26";
-            this.gunaLabel26.Size = new System.Drawing.Size(339, 33);
+            this.gunaLabel26.Size = new System.Drawing.Size(189, 19);
             this.gunaLabel26.TabIndex = 44;
             this.gunaLabel26.Text = "------------------";
             // 
@@ -339,7 +339,7 @@
             this.gunaLabel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
             this.gunaLabel18.Font = new System.Drawing.Font("타이포_다방구 B", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
-            this.gunaLabel18.Location = new System.Drawing.Point(456, 990);
+            this.gunaLabel18.Location = new System.Drawing.Point(402, 985);
             this.gunaLabel18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel18.Name = "gunaLabel18";
             this.gunaLabel18.Size = new System.Drawing.Size(339, 33);
@@ -352,7 +352,7 @@
             this.gunaLabel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
             this.gunaLabel19.Font = new System.Drawing.Font("타이포_다방구 B", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
-            this.gunaLabel19.Location = new System.Drawing.Point(454, 922);
+            this.gunaLabel19.Location = new System.Drawing.Point(400, 917);
             this.gunaLabel19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel19.Name = "gunaLabel19";
             this.gunaLabel19.Size = new System.Drawing.Size(339, 33);
@@ -365,7 +365,7 @@
             this.gunaLabel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
             this.gunaLabel20.Font = new System.Drawing.Font("타이포_다방구 B", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(171)))), ((int)(((byte)(0)))));
-            this.gunaLabel20.Location = new System.Drawing.Point(454, 860);
+            this.gunaLabel20.Location = new System.Drawing.Point(400, 855);
             this.gunaLabel20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel20.Name = "gunaLabel20";
             this.gunaLabel20.Size = new System.Drawing.Size(339, 33);
@@ -483,7 +483,7 @@
             this.gunaLabel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(134)))), ((int)(((byte)(53)))));
             this.gunaLabel10.Font = new System.Drawing.Font("타이포_다방구 B", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel10.Location = new System.Drawing.Point(457, 422);
+            this.gunaLabel10.Location = new System.Drawing.Point(399, 422);
             this.gunaLabel10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel10.Name = "gunaLabel10";
             this.gunaLabel10.Size = new System.Drawing.Size(339, 33);
@@ -496,7 +496,7 @@
             this.gunaLabel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(134)))), ((int)(((byte)(53)))));
             this.gunaLabel9.Font = new System.Drawing.Font("타이포_다방구 B", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel9.Location = new System.Drawing.Point(456, 354);
+            this.gunaLabel9.Location = new System.Drawing.Point(398, 354);
             this.gunaLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel9.Name = "gunaLabel9";
             this.gunaLabel9.Size = new System.Drawing.Size(339, 33);
@@ -509,7 +509,7 @@
             this.gunaLabel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(134)))), ((int)(((byte)(53)))));
             this.gunaLabel8.Font = new System.Drawing.Font("타이포_다방구 B", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaLabel8.Location = new System.Drawing.Point(456, 291);
+            this.gunaLabel8.Location = new System.Drawing.Point(398, 291);
             this.gunaLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel8.Name = "gunaLabel8";
             this.gunaLabel8.Size = new System.Drawing.Size(339, 33);
@@ -589,7 +589,7 @@
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
             this.gunaPanel1.Location = new System.Drawing.Point(164, 42);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(907, 38);
             this.gunaPanel1.TabIndex = 1;
@@ -602,7 +602,7 @@
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.gunaLinePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Order_Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Order_Form3";

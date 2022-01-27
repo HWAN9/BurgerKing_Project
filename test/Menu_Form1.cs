@@ -157,7 +157,6 @@ namespace test
         private void gunaButton3_Click_1(object sender, EventArgs e)
         {
             Hide();
-            guna2DataGridView1.DataSource = null;
             orderForm3.SetText(session);
             orderForm3.setObj(this);
             orderForm3.ShowDialog();
@@ -168,6 +167,7 @@ namespace test
 
         public void OrderClose()
         {
+            guna2DataGridView1.DataSource = null;
             Close();
         }
         public void OrderContinue()
