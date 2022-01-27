@@ -118,21 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="gunaGradientButton_valid.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAUxJREFUSEvt
-        lDsvBFEYhoeoSGSJS/gJSqVEQaFQSESi1/kXm41asYVGoqHjTyh0VCpEIREFahESjuf75rXmuM0yJ6LY
-        J3myk+/yns3Z7GQd/gUhhBVs4qhK6SF8Gp/QuMVFtdJBaB+e2wkF7rFbI2kgcMOjY3bVTgOB83luxCXW
-        NFIdwgbxypILPOOcRtJA4LZHx2ypnQYCl/LciAvs10h1CBvBG0suYFc2q5FyGB7CBk6p9AF6O/ieTbXL
-        YXgcT3wthAdcUKsFtWXvxpxhr0bKYXjf1964w9Z18DyM19YoYG+DGY20BwsHvhpjh3kQn3teiWn68k9g
-        yb7xsa/H2GHr+WPEKbZ/ZUVYrOGhpZTwiJNa+x0E2GFHlvYNaxqvBkED+NVhVu/RaHUI++w3s9f/hEbS
-        QegYvv63jLpa6SHc3tJ1XMUulTv8BVn2AlP6YXPmw0UbAAAAAElFTkSuQmCC
-</value>
-  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAXgAAAD3CAYAAAAXDE8fAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DgAACw4BQL7hQQAA/7JJREFUeF7svQdYFOu6pv2t6AqupcucUHLOOeecFEQRBBEwg4gogiiCIAKCimJC
+        DQAACw0B7QfALAAA/7JJREFUeF7svQdYFOu6pv2t6AqupcucUHLOOeecFEQRBBEwg4gogiiCIAKCimJC
         QAQlKiBKVECSBEFFMOecs6ISn//tdp/zzznDzJm9z+yZo1Ne1201H9Xd1dXV9/u81VUFA8DBwcHB8Q0y
         6CAHBwcHx9fPoIMcHBwcHF8/gw5ycHBwcHz9DDrIwcHBwfH1M+ggBwcHB8fXz6CDHBwcHBxfP4MOcnBw
         cHB8/Qw6yMHBwcHx9TPoIAcHBwfH18+ggxwcHBwcXz+DDnJwcHBwfP0MOsjBwcHB8fUz6CAHBwcHx9fP

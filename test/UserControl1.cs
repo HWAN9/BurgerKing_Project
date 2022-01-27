@@ -19,30 +19,30 @@ namespace test
 
         private void UserControl1_Click(object sender, EventArgs e)
         {
-            if(gunaGradientButton_valid.Visible==false)
-            {
-                gunaGradientButton_valid.Visible=true;
-                gunaLinePanel1_velid.Visible = true;
-            }
-            else
-            {
-                gunaGradientButton_valid.Visible = false;
-                gunaLinePanel1_velid.Visible = false;
-            }
+            //if(gunaGradientButton_valid.Visible==false)
+            //{
+            //    gunaGradientButton_valid.Visible=true;
+            //    gunaLinePanel1_velid.Visible = true;
+            //}
+            //else
+            //{
+            //    gunaGradientButton_valid.Visible = false;
+            //    gunaLinePanel1_velid.Visible = false;
+            //}
         }
 
         private void gunaLinePanel1_velid_Click(object sender, EventArgs e)
         {
-            if (gunaGradientButton_valid.Visible == false)
-            {
-                gunaGradientButton_valid.Visible = true;
-                gunaLinePanel1_velid.Visible = true;
-            }
-            else
-            {
-                gunaGradientButton_valid.Visible = false;
-                gunaLinePanel1_velid.Visible = false;
-            }
+            //if (gunaGradientButton_valid.Visible == false)
+            //{
+            //    gunaGradientButton_valid.Visible = true;
+            //    gunaLinePanel1_velid.Visible = true;
+            //}
+            //else
+            //{
+            //    gunaGradientButton_valid.Visible = false;
+            //    gunaLinePanel1_velid.Visible = false;
+            //}
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
