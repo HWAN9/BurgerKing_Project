@@ -96,7 +96,8 @@ namespace test
         {
             this.Visible = false;
             searchForm1.SetText(session);
-            searchForm1.Show();
+            searchForm1.ShowDialog();
+            Close();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

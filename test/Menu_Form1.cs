@@ -156,12 +156,27 @@ namespace test
 
         private void gunaButton3_Click_1(object sender, EventArgs e)
         {
-            this.Visible = false;
+            Hide();
             guna2DataGridView1.DataSource = null;
             orderForm3.SetText(session);
-            orderForm3.setObj();
-            orderForm3.Show();
+            orderForm3.setObj(this);
+            orderForm3.ShowDialog();
+            //Visible = true;
+
+            //Close();
         }
+
+        public void OrderClose()
+        {
+            Close();
+        }
+        public void OrderContinue()
+        {
+            Show();
+            guna2DataGridView1.DataSource = null;
+            guna2DataGridView1.DataSource = DataManager.myList;
+        }
+
 
         public void setObj(Locale myselect)
         {
@@ -172,7 +187,7 @@ namespace test
             //gunaLabel18.Text = store_obj.Address;
         }
 
-        internal void SetText(string text)
+        public void SetText(string text)
         {
             session = text;
             //MessageBox.Show("메뉴" + session);

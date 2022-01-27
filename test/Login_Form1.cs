@@ -100,6 +100,7 @@ namespace test
                         MessageBox.Show("비밀번호가 틀렸습니다.");
                     }
                 }
+
                 else
                 {
                     MessageBox.Show("잘못된 ID 입니다.");

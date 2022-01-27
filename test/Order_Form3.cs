@@ -13,7 +13,7 @@ namespace test
 {
     public partial class Order_Form3 : Form
     {
-        public static Menu_Form1 menuForm1 = new Menu_Form1();
+        public Menu_Form1 menuForm1 = new Menu_Form1();
         public static Order_Form2 orderForm2 = new Order_Form2();
         public static Search_Form1 searchForm1 = new Search_Form1();
         public static Home_Form1 homeForm1 = new Home_Form1();
@@ -42,10 +42,10 @@ namespace test
 
         }
 
-        public void setObj()
+        public void setObj(Menu_Form1 m)
         {
             Locale store_obj = DataManager.myselect;
-
+            menuForm1 = m;
             gunaLabel20.Text = store_obj.Name;
             gunaLabel19.Text = store_obj.Phone;
             gunaLabel18.Text = store_obj.Address;
@@ -53,8 +53,8 @@ namespace test
 
         private void gunaButton1_Click_1(object sender, EventArgs e)
         {
-            this.Visible=false;
-            searchForm1.Show();  
+            Close();
+            menuForm1.OrderContinue();
         }
 
         private void gunaPictureBox1_Click(object sender, EventArgs e)
@@ -108,7 +108,11 @@ namespace test
                 }
                 else
                 {
-                    MessageBox.Show("잘못된 ID 입니다.");
+
+                    gunaLabel8.Text = "비회원";
+                    gunaLabel9.Text = "-";
+                    gunaLabel10.Text = "매장수령";
+                    //MessageBox.Show("잘못된 ID 입니다.");
                 }
 
 
@@ -122,10 +126,11 @@ namespace test
 
         private void gunaButton2_Click_1(object sender, EventArgs e)
         {
-            this.Visible = false;
-            menuForm1.Visible = true;
-
-            menuForm1.SetText(session);
+            Hide();
+            menuForm1.Close();
+            orderForm2.setText(session);
+            orderForm2.ShowDialog();
+            Close();
         }
 
         private void gunaLabel13_Click(object sender, EventArgs e)

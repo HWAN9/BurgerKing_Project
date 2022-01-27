@@ -33,11 +33,12 @@ namespace test
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            this.Visible=false; 
+            Hide();
             menuForm1.SetText(session);
-            //menuForm1.setObj(myselect);
             DataManager.myselect = myselect;
-            menuForm1.Show();
+            //menuForm1.SetText(session);
+            menuForm1.ShowDialog();
+            Close();
 
             //orderForm3.setObj(myselect);
             //orderForm3.ShowDialog();
