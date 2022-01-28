@@ -75,12 +75,12 @@ namespace test
                 sin = "감자튀김";
                 si = 0;
             }
-            else if(gunaRadioButton1.Checked == true)
+            else if(gunaRadioButton2.Checked == true)
             {
                 sin = "치즈스틱";
                 si = 200;
             }
-            else if(gunaRadioButton2.Checked == true)
+            else if(gunaRadioButton1.Checked == true)
             {
                 sin = "너겟킹";
                 si = 500;
@@ -90,22 +90,22 @@ namespace test
         public int dr;
         private void Set_Drink_Add(object sender, EventArgs e)
         {
-            if(gunaRadioButton7.Checked == true)
+            if(gunaRadioButton4.Checked == true)
             {
                 drn = "코카콜라";
                 dr = 0;
             }
-            else if(gunaRadioButton3.Checked == true)
+            else if(gunaRadioButton5.Checked == true)
             {
                 drn = "스프라이트";
                 dr = 200;
             }
-            else if(gunaRadioButton4.Checked == true)
+            else if(gunaRadioButton7.Checked == true)
             {
                 drn = "제로톡톡";
                 dr = 500;
             }
-            else if(gunaRadioButton5.Checked == true)
+            else if(gunaRadioButton3.Checked == true)
             {
                 drn = "아메리카노";
                 dr = 100;

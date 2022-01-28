@@ -182,6 +182,7 @@
             this.gunaLabel25.Size = new System.Drawing.Size(220, 48);
             this.gunaLabel25.TabIndex = 45;
             this.gunaLabel25.Text = "주문메뉴명";
+            this.gunaLabel25.Click += new System.EventHandler(this.gunaLabel25_Click);
             // 
             // gunaLabel26
             // 
@@ -195,6 +196,7 @@
             this.gunaLabel26.Size = new System.Drawing.Size(189, 19);
             this.gunaLabel26.TabIndex = 44;
             this.gunaLabel26.Text = "------------------";
+            this.gunaLabel26.Click += new System.EventHandler(this.gunaLabel26_Click);
             // 
             // gunaLabel23
             // 

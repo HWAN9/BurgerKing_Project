@@ -29,24 +29,34 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Form1));
             this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rownumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userControl1_special_20 = new test.UserControl1();
+            this.userControl1_special_21 = new test.UserControl1();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.gunaVScrollBar1 = new Guna.UI.WinForms.GunaVScrollBar();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userControl_burger_17 = new test.UserControl1();
+            this.userControl_burger_18 = new test.UserControl1();
+            this.userControl_burger_15 = new test.UserControl1();
+            this.userControl_burger_16 = new test.UserControl1();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.userControl_burger_19 = new test.UserControl1();
+            this.userControl_burger_14 = new test.UserControl1();
+            this.userControl_burger_13 = new test.UserControl1();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.userControl_burger_1 = new test.UserControl1();
             this.userControl_burger_2 = new test.UserControl1();
             this.userControl_burger_3 = new test.UserControl1();
@@ -59,27 +69,21 @@
             this.userControl_burger_10 = new test.UserControl1();
             this.userControl_burger_11 = new test.UserControl1();
             this.userControl_burger_12 = new test.UserControl1();
-            this.userControl_burger_17 = new test.UserControl1();
-            this.userControl_burger_18 = new test.UserControl1();
-            this.userControl_burger_15 = new test.UserControl1();
-            this.userControl_burger_16 = new test.UserControl1();
             this.menuBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userControl_burger_19 = new test.UserControl1();
-            this.userControl_burger_14 = new test.UserControl1();
-            this.userControl_burger_13 = new test.UserControl1();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rownumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menuBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaLinePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).BeginInit();
+            this.flowLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gunaLinePanel1
@@ -87,19 +91,20 @@
             this.gunaLinePanel1.AllowDrop = true;
             this.gunaLinePanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(230)))));
             this.gunaLinePanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.gunaLinePanel1.Controls.Add(this.guna2DataGridView1);
-            this.gunaLinePanel1.Controls.Add(this.gunaButton3);
             this.gunaLinePanel1.Controls.Add(this.gunaButton6);
-            this.gunaLinePanel1.Controls.Add(this.gunaButton5);
-            this.gunaLinePanel1.Controls.Add(this.gunaButton4);
-            this.gunaLinePanel1.Controls.Add(this.gunaButton2);
             this.gunaLinePanel1.Controls.Add(this.gunaButton1);
+            this.gunaLinePanel1.Controls.Add(this.gunaButton4);
+            this.gunaLinePanel1.Controls.Add(this.guna2DataGridView1);
+            this.gunaLinePanel1.Controls.Add(this.gunaButton2);
+            this.gunaLinePanel1.Controls.Add(this.gunaButton3);
+            this.gunaLinePanel1.Controls.Add(this.flowLayoutPanel4);
+            this.gunaLinePanel1.Controls.Add(this.gunaButton5);
             this.gunaLinePanel1.Controls.Add(this.gunaPictureBox1);
             this.gunaLinePanel1.Controls.Add(this.gunaPanel1);
             this.gunaLinePanel1.Controls.Add(this.gunaVScrollBar1);
-            this.gunaLinePanel1.Controls.Add(this.flowLayoutPanel1);
             this.gunaLinePanel1.Controls.Add(this.flowLayoutPanel2);
             this.gunaLinePanel1.Controls.Add(this.flowLayoutPanel3);
+            this.gunaLinePanel1.Controls.Add(this.flowLayoutPanel1);
             this.gunaLinePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaLinePanel1.LineBottom = 25;
             this.gunaLinePanel1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(134)))), ((int)(((byte)(53)))));
@@ -112,191 +117,6 @@
             this.gunaLinePanel1.TabIndex = 0;
             this.gunaLinePanel1.TabStop = true;
             this.gunaLinePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaLinePanel1_Paint);
-            // 
-            // gunaButton3
-            // 
-            this.gunaButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
-            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
-            this.gunaButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaButton3.Image = null;
-            this.gunaButton3.ImageSize = new System.Drawing.Size(0, 0);
-            this.gunaButton3.Location = new System.Drawing.Point(254, 1167);
-            this.gunaButton3.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
-            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton3.OnHoverImage = null;
-            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Radius = 24;
-            this.gunaButton3.Size = new System.Drawing.Size(563, 86);
-            this.gunaButton3.TabIndex = 27;
-            this.gunaButton3.Text = "주문하기";
-            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton3.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
-            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click_1);
-            // 
-            // gunaButton6
-            // 
-            this.gunaButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaButton6.AnimationSpeed = 0.03F;
-            this.gunaButton6.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaButton6.Image = null;
-            this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton6.Location = new System.Drawing.Point(763, 118);
-            this.gunaButton6.Margin = new System.Windows.Forms.Padding(4, 4, 71, 4);
-            this.gunaButton6.Name = "gunaButton6";
-            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton6.OnHoverImage = null;
-            this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton6.Size = new System.Drawing.Size(109, 52);
-            this.gunaButton6.TabIndex = 23;
-            this.gunaButton6.Text = "드링크";
-            this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
-            // 
-            // gunaButton5
-            // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaButton5.Image = null;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(594, 118);
-            this.gunaButton5.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Size = new System.Drawing.Size(110, 52);
-            this.gunaButton5.TabIndex = 22;
-            this.gunaButton5.Text = "사이드";
-            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
-            // 
-            // gunaButton4
-            // 
-            this.gunaButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaButton4.AnimationSpeed = 0.03F;
-            this.gunaButton4.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaButton4.Image = null;
-            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(467, 118);
-            this.gunaButton4.Margin = new System.Windows.Forms.Padding(4, 4, 71, 4);
-            this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton4.OnHoverImage = null;
-            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Size = new System.Drawing.Size(97, 52);
-            this.gunaButton4.TabIndex = 21;
-            this.gunaButton4.Text = "스페셜";
-            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
-            // 
-            // gunaButton2
-            // 
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaButton2.Image = null;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(339, 118);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(4, 4, 71, 4);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.Size = new System.Drawing.Size(109, 52);
-            this.gunaButton2.TabIndex = 20;
-            this.gunaButton2.Text = "프리미엄";
-            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
-            this.gunaButton2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gunaButton2_MouseClick);
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(234, 118);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4, 4, 71, 4);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.Size = new System.Drawing.Size(91, 52);
-            this.gunaButton1.TabIndex = 19;
-            this.gunaButton1.Text = "와퍼";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.BackgroundImage")));
-            this.gunaPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(160, 158);
-            this.gunaPictureBox1.TabIndex = 6;
-            this.gunaPictureBox1.TabStop = false;
-            this.gunaPictureBox1.Click += new System.EventHandler(this.gunaPictureBox1_Click);
-            this.gunaPictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gunaPictureBox1_MouseClick);
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 42);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1071, 38);
-            this.gunaPanel1.TabIndex = 26;
             // 
             // guna2DataGridView1
             // 
@@ -367,6 +187,132 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "category";
+            this.categoryDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rownumDataGridViewTextBoxColumn
+            // 
+            this.rownumDataGridViewTextBoxColumn.DataPropertyName = "rownum";
+            this.rownumDataGridViewTextBoxColumn.HeaderText = "rownum";
+            this.rownumDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.rownumDataGridViewTextBoxColumn.Name = "rownumDataGridViewTextBoxColumn";
+            this.rownumDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rownumDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // menuBindingSource1
+            // 
+            this.menuBindingSource1.DataSource = typeof(test.Menu);
+            // 
+            // gunaButton3
+            // 
+            this.gunaButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaButton3.AnimationSpeed = 0.03F;
+            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
+            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27F);
+            this.gunaButton3.ForeColor = System.Drawing.Color.White;
+            this.gunaButton3.Image = null;
+            this.gunaButton3.ImageSize = new System.Drawing.Size(0, 0);
+            this.gunaButton3.Location = new System.Drawing.Point(254, 1167);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(0);
+            this.gunaButton3.Name = "gunaButton3";
+            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
+            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton3.OnHoverImage = null;
+            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton3.Radius = 24;
+            this.gunaButton3.Size = new System.Drawing.Size(563, 86);
+            this.gunaButton3.TabIndex = 27;
+            this.gunaButton3.Text = "주문하기";
+            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton3.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click_1);
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.userControl1_special_20);
+            this.flowLayoutPanel4.Controls.Add(this.userControl1_special_21);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(116, 177);
+            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(823, 729);
+            this.flowLayoutPanel4.TabIndex = 29;
+            this.flowLayoutPanel4.Visible = false;
+            // 
+            // userControl1_special_20
+            // 
+            this.userControl1_special_20.BackColor = System.Drawing.Color.Transparent;
+            this.userControl1_special_20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_special_20.BackgroundImage")));
+            this.userControl1_special_20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl1_special_20.Location = new System.Drawing.Point(13, 12);
+            this.userControl1_special_20.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl1_special_20.Name = "userControl1_special_20";
+            this.userControl1_special_20.Size = new System.Drawing.Size(226, 216);
+            this.userControl1_special_20.TabIndex = 0;
+            this.userControl1_special_20.Click += new System.EventHandler(this.select_menu);
+            // 
+            // userControl1_special_21
+            // 
+            this.userControl1_special_21.BackColor = System.Drawing.Color.Transparent;
+            this.userControl1_special_21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl1_special_21.BackgroundImage")));
+            this.userControl1_special_21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl1_special_21.Location = new System.Drawing.Point(265, 12);
+            this.userControl1_special_21.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl1_special_21.Name = "userControl1_special_21";
+            this.userControl1_special_21.Size = new System.Drawing.Size(226, 216);
+            this.userControl1_special_21.TabIndex = 2;
+            this.userControl1_special_21.Click += new System.EventHandler(this.select_menu);
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.BackgroundImage")));
+            this.gunaPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(160, 158);
+            this.gunaPictureBox1.TabIndex = 6;
+            this.gunaPictureBox1.TabStop = false;
+            this.gunaPictureBox1.Click += new System.EventHandler(this.gunaPictureBox1_Click);
+            this.gunaPictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gunaPictureBox1_MouseClick);
+            // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 42);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(1071, 38);
+            this.gunaPanel1.TabIndex = 26;
+            // 
             // gunaVScrollBar1
             // 
             this.gunaVScrollBar1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -383,6 +329,115 @@
             this.gunaVScrollBar1.ThumbHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(134)))), ((int)(((byte)(53)))));
             this.gunaVScrollBar1.ThumbPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(134)))), ((int)(((byte)(53)))));
             this.gunaVScrollBar1.Value = 1;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.userControl_burger_17);
+            this.flowLayoutPanel2.Controls.Add(this.userControl_burger_18);
+            this.flowLayoutPanel2.Controls.Add(this.userControl_burger_15);
+            this.flowLayoutPanel2.Controls.Add(this.userControl_burger_16);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(116, 177);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(823, 729);
+            this.flowLayoutPanel2.TabIndex = 28;
+            this.flowLayoutPanel2.Visible = false;
+            // 
+            // userControl_burger_17
+            // 
+            this.userControl_burger_17.BackColor = System.Drawing.Color.Transparent;
+            this.userControl_burger_17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_17.BackgroundImage")));
+            this.userControl_burger_17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_burger_17.Location = new System.Drawing.Point(13, 12);
+            this.userControl_burger_17.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl_burger_17.Name = "userControl_burger_17";
+            this.userControl_burger_17.Size = new System.Drawing.Size(226, 216);
+            this.userControl_burger_17.TabIndex = 0;
+            this.userControl_burger_17.Click += new System.EventHandler(this.select_menu);
+            // 
+            // userControl_burger_18
+            // 
+            this.userControl_burger_18.BackColor = System.Drawing.Color.Transparent;
+            this.userControl_burger_18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_18.BackgroundImage")));
+            this.userControl_burger_18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_burger_18.Location = new System.Drawing.Point(265, 12);
+            this.userControl_burger_18.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl_burger_18.Name = "userControl_burger_18";
+            this.userControl_burger_18.Size = new System.Drawing.Size(226, 216);
+            this.userControl_burger_18.TabIndex = 2;
+            this.userControl_burger_18.Click += new System.EventHandler(this.select_menu);
+            // 
+            // userControl_burger_15
+            // 
+            this.userControl_burger_15.BackColor = System.Drawing.Color.Transparent;
+            this.userControl_burger_15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_15.BackgroundImage")));
+            this.userControl_burger_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_burger_15.Location = new System.Drawing.Point(517, 12);
+            this.userControl_burger_15.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl_burger_15.Name = "userControl_burger_15";
+            this.userControl_burger_15.Size = new System.Drawing.Size(226, 216);
+            this.userControl_burger_15.TabIndex = 1;
+            this.userControl_burger_15.Click += new System.EventHandler(this.select_menu);
+            // 
+            // userControl_burger_16
+            // 
+            this.userControl_burger_16.BackColor = System.Drawing.Color.Transparent;
+            this.userControl_burger_16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_16.BackgroundImage")));
+            this.userControl_burger_16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_burger_16.Location = new System.Drawing.Point(13, 252);
+            this.userControl_burger_16.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl_burger_16.Name = "userControl_burger_16";
+            this.userControl_burger_16.Size = new System.Drawing.Size(226, 216);
+            this.userControl_burger_16.TabIndex = 3;
+            this.userControl_burger_16.Click += new System.EventHandler(this.select_menu);
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.userControl_burger_19);
+            this.flowLayoutPanel3.Controls.Add(this.userControl_burger_14);
+            this.flowLayoutPanel3.Controls.Add(this.userControl_burger_13);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(116, 177);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(823, 729);
+            this.flowLayoutPanel3.TabIndex = 29;
+            this.flowLayoutPanel3.Visible = false;
+            // 
+            // userControl_burger_19
+            // 
+            this.userControl_burger_19.BackColor = System.Drawing.Color.Transparent;
+            this.userControl_burger_19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_19.BackgroundImage")));
+            this.userControl_burger_19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_burger_19.Location = new System.Drawing.Point(13, 12);
+            this.userControl_burger_19.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl_burger_19.Name = "userControl_burger_19";
+            this.userControl_burger_19.Size = new System.Drawing.Size(226, 216);
+            this.userControl_burger_19.TabIndex = 0;
+            this.userControl_burger_19.Click += new System.EventHandler(this.select_menu);
+            // 
+            // userControl_burger_14
+            // 
+            this.userControl_burger_14.BackColor = System.Drawing.Color.Transparent;
+            this.userControl_burger_14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_14.BackgroundImage")));
+            this.userControl_burger_14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_burger_14.Location = new System.Drawing.Point(265, 12);
+            this.userControl_burger_14.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl_burger_14.Name = "userControl_burger_14";
+            this.userControl_burger_14.Size = new System.Drawing.Size(226, 216);
+            this.userControl_burger_14.TabIndex = 1;
+            this.userControl_burger_14.Click += new System.EventHandler(this.select_menu);
+            // 
+            // userControl_burger_13
+            // 
+            this.userControl_burger_13.BackColor = System.Drawing.Color.Transparent;
+            this.userControl_burger_13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_13.BackgroundImage")));
+            this.userControl_burger_13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.userControl_burger_13.Location = new System.Drawing.Point(517, 12);
+            this.userControl_burger_13.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
+            this.userControl_burger_13.Name = "userControl_burger_13";
+            this.userControl_burger_13.Size = new System.Drawing.Size(226, 216);
+            this.userControl_burger_13.TabIndex = 2;
+            this.userControl_burger_13.Click += new System.EventHandler(this.select_menu);
             // 
             // flowLayoutPanel1
             // 
@@ -405,31 +460,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(823, 726);
             this.flowLayoutPanel1.TabIndex = 11;
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Controls.Add(this.userControl_burger_19);
-            this.flowLayoutPanel3.Controls.Add(this.userControl_burger_14);
-            this.flowLayoutPanel3.Controls.Add(this.userControl_burger_13);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(116, 177);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(823, 729);
-            this.flowLayoutPanel3.TabIndex = 29;
-            this.flowLayoutPanel3.Visible = false;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.userControl_burger_17);
-            this.flowLayoutPanel2.Controls.Add(this.userControl_burger_18);
-            this.flowLayoutPanel2.Controls.Add(this.userControl_burger_15);
-            this.flowLayoutPanel2.Controls.Add(this.userControl_burger_16);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(116, 177);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(823, 729);
-            this.flowLayoutPanel2.TabIndex = 28;
-            this.flowLayoutPanel2.Visible = false;
             // 
             // userControl_burger_1
             // 
@@ -577,129 +607,150 @@
             this.userControl_burger_12.TabIndex = 11;
             this.userControl_burger_12.Click += new System.EventHandler(this.select_menu);
             // 
-            // userControl_burger_17
-            // 
-            this.userControl_burger_17.BackColor = System.Drawing.Color.Transparent;
-            this.userControl_burger_17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_17.BackgroundImage")));
-            this.userControl_burger_17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_burger_17.Location = new System.Drawing.Point(13, 12);
-            this.userControl_burger_17.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.userControl_burger_17.Name = "userControl_burger_17";
-            this.userControl_burger_17.Size = new System.Drawing.Size(226, 216);
-            this.userControl_burger_17.TabIndex = 0;
-            this.userControl_burger_17.Click += new System.EventHandler(this.select_menu);
-            // 
-            // userControl_burger_18
-            // 
-            this.userControl_burger_18.BackColor = System.Drawing.Color.Transparent;
-            this.userControl_burger_18.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_18.BackgroundImage")));
-            this.userControl_burger_18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_burger_18.Location = new System.Drawing.Point(265, 12);
-            this.userControl_burger_18.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.userControl_burger_18.Name = "userControl_burger_18";
-            this.userControl_burger_18.Size = new System.Drawing.Size(226, 216);
-            this.userControl_burger_18.TabIndex = 2;
-            this.userControl_burger_18.Click += new System.EventHandler(this.select_menu);
-            // 
-            // userControl_burger_15
-            // 
-            this.userControl_burger_15.BackColor = System.Drawing.Color.Transparent;
-            this.userControl_burger_15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_15.BackgroundImage")));
-            this.userControl_burger_15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_burger_15.Location = new System.Drawing.Point(517, 12);
-            this.userControl_burger_15.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.userControl_burger_15.Name = "userControl_burger_15";
-            this.userControl_burger_15.Size = new System.Drawing.Size(226, 216);
-            this.userControl_burger_15.TabIndex = 1;
-            this.userControl_burger_15.Click += new System.EventHandler(this.select_menu);
-            // 
-            // userControl_burger_16
-            // 
-            this.userControl_burger_16.BackColor = System.Drawing.Color.Transparent;
-            this.userControl_burger_16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_16.BackgroundImage")));
-            this.userControl_burger_16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_burger_16.Location = new System.Drawing.Point(13, 252);
-            this.userControl_burger_16.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.userControl_burger_16.Name = "userControl_burger_16";
-            this.userControl_burger_16.Size = new System.Drawing.Size(226, 216);
-            this.userControl_burger_16.TabIndex = 3;
-            this.userControl_burger_16.Click += new System.EventHandler(this.select_menu);
-            // 
             // menuBindingSource
             // 
             this.menuBindingSource.DataSource = typeof(test.Menu);
             // 
-            // userControl_burger_19
+            // gunaButton6
             // 
-            this.userControl_burger_19.BackColor = System.Drawing.Color.Transparent;
-            this.userControl_burger_19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_19.BackgroundImage")));
-            this.userControl_burger_19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_burger_19.Location = new System.Drawing.Point(13, 12);
-            this.userControl_burger_19.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.userControl_burger_19.Name = "userControl_burger_19";
-            this.userControl_burger_19.Size = new System.Drawing.Size(226, 216);
-            this.userControl_burger_19.TabIndex = 0;
-            this.userControl_burger_19.Click += new System.EventHandler(this.select_menu);
+            this.gunaButton6.AnimationHoverSpeed = 0.07F;
+            this.gunaButton6.AnimationSpeed = 0.03F;
+            this.gunaButton6.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton6.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton6.Font = new System.Drawing.Font("타이포_다방구 B", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
+            this.gunaButton6.Image = null;
+            this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton6.Location = new System.Drawing.Point(798, 106);
+            this.gunaButton6.Margin = new System.Windows.Forms.Padding(4, 4, 71, 4);
+            this.gunaButton6.Name = "gunaButton6";
+            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
+            this.gunaButton6.OnHoverImage = null;
+            this.gunaButton6.OnPressedColor = System.Drawing.Color.Transparent;
+            this.gunaButton6.OnPressedDepth = 0;
+            this.gunaButton6.Size = new System.Drawing.Size(109, 52);
+            this.gunaButton6.TabIndex = 23;
+            this.gunaButton6.Text = "드링크";
+            this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton6.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
             // 
-            // userControl_burger_14
+            // gunaButton5
             // 
-            this.userControl_burger_14.BackColor = System.Drawing.Color.Transparent;
-            this.userControl_burger_14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_14.BackgroundImage")));
-            this.userControl_burger_14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_burger_14.Location = new System.Drawing.Point(265, 12);
-            this.userControl_burger_14.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.userControl_burger_14.Name = "userControl_burger_14";
-            this.userControl_burger_14.Size = new System.Drawing.Size(226, 216);
-            this.userControl_burger_14.TabIndex = 1;
-            this.userControl_burger_14.Click += new System.EventHandler(this.select_menu);
+            this.gunaButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaButton5.AnimationSpeed = 0.03F;
+            this.gunaButton5.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton5.Font = new System.Drawing.Font("타이포_다방구 B", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
+            this.gunaButton5.Image = null;
+            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton5.Location = new System.Drawing.Point(633, 106);
+            this.gunaButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaButton5.Name = "gunaButton5";
+            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
+            this.gunaButton5.OnHoverImage = null;
+            this.gunaButton5.OnPressedColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.OnPressedDepth = 0;
+            this.gunaButton5.Size = new System.Drawing.Size(110, 52);
+            this.gunaButton5.TabIndex = 22;
+            this.gunaButton5.Text = "사이드";
+            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton5.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
             // 
-            // userControl_burger_13
+            // gunaButton4
             // 
-            this.userControl_burger_13.BackColor = System.Drawing.Color.Transparent;
-            this.userControl_burger_13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("userControl_burger_13.BackgroundImage")));
-            this.userControl_burger_13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.userControl_burger_13.Location = new System.Drawing.Point(517, 12);
-            this.userControl_burger_13.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
-            this.userControl_burger_13.Name = "userControl_burger_13";
-            this.userControl_burger_13.Size = new System.Drawing.Size(226, 216);
-            this.userControl_burger_13.TabIndex = 2;
-            this.userControl_burger_13.Click += new System.EventHandler(this.select_menu);
+            this.gunaButton4.AnimationHoverSpeed = 0.07F;
+            this.gunaButton4.AnimationSpeed = 0.03F;
+            this.gunaButton4.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton4.Font = new System.Drawing.Font("타이포_다방구 B", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
+            this.gunaButton4.Image = null;
+            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton4.Location = new System.Drawing.Point(487, 106);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(4, 4, 71, 4);
+            this.gunaButton4.Name = "gunaButton4";
+            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
+            this.gunaButton4.OnHoverImage = null;
+            this.gunaButton4.OnPressedColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.OnPressedDepth = 0;
+            this.gunaButton4.Size = new System.Drawing.Size(97, 52);
+            this.gunaButton4.TabIndex = 21;
+            this.gunaButton4.Text = "스페셜";
+            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton4.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
             // 
-            // nameDataGridViewTextBoxColumn
+            // gunaButton2
             // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton2.Font = new System.Drawing.Font("타이포_다방구 B", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
+            this.gunaButton2.Image = null;
+            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton2.Location = new System.Drawing.Point(323, 106);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(4, 4, 71, 4);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.OnPressedDepth = 0;
+            this.gunaButton2.Size = new System.Drawing.Size(109, 52);
+            this.gunaButton2.TabIndex = 20;
+            this.gunaButton2.Text = "프리미엄";
+            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton2.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click);
+            this.gunaButton2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.gunaButton2_MouseClick);
             // 
-            // priceDataGridViewTextBoxColumn
+            // gunaButton1
             // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "price";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // categoryDataGridViewTextBoxColumn
-            // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "category";
-            this.categoryDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // rownumDataGridViewTextBoxColumn
-            // 
-            this.rownumDataGridViewTextBoxColumn.DataPropertyName = "rownum";
-            this.rownumDataGridViewTextBoxColumn.HeaderText = "rownum";
-            this.rownumDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.rownumDataGridViewTextBoxColumn.Name = "rownumDataGridViewTextBoxColumn";
-            this.rownumDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // menuBindingSource1
-            // 
-            this.menuBindingSource1.DataSource = typeof(test.Menu);
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("타이포_다방구 B", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(28)))), ((int)(((byte)(12)))));
+            this.gunaButton1.Image = null;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(186, 106);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4, 4, 71, 4);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(35)))), ((int)(((byte)(0)))));
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.OnPressedDepth = 0;
+            this.gunaButton1.Size = new System.Drawing.Size(91, 52);
+            this.gunaButton1.TabIndex = 19;
+            this.gunaButton1.Text = "와퍼";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.AntiAliasGridFit;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // Menu_Form1
             // 
@@ -713,13 +764,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load_1);
             this.gunaLinePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource1)).EndInit();
+            this.flowLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -728,11 +780,6 @@
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
         private Guna.UI.WinForms.GunaVScrollBar gunaVScrollBar1;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaButton gunaButton1;
-        private Guna.UI.WinForms.GunaButton gunaButton2;
-        private Guna.UI.WinForms.GunaButton gunaButton4;
-        private Guna.UI.WinForms.GunaButton gunaButton5;
-        private Guna.UI.WinForms.GunaButton gunaButton6;
         private System.Windows.Forms.BindingSource menuBindingSource;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
@@ -759,11 +806,19 @@
         private UserControl1 userControl_burger_18;
         private UserControl1 userControl_burger_15;
         private UserControl1 userControl_burger_16;
+        private System.Windows.Forms.BindingSource menuBindingSource1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private UserControl1 userControl1_special_20;
+        private UserControl1 userControl1_special_21;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rownumDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource menuBindingSource1;
+        private Guna.UI.WinForms.GunaButton gunaButton6;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaButton gunaButton4;
+        private Guna.UI.WinForms.GunaButton gunaButton2;
+        private Guna.UI.WinForms.GunaButton gunaButton5;
     }
 }
 

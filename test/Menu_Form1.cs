@@ -74,7 +74,15 @@ namespace test
             //mymenu = mySelect.Name.Split('_')[2];
             //rownums.Add(rownum);
             Form1 form1 = new Form1(mymenu);
-            form1.ShowDialog();
+
+            if(mymenu.rownum<=12)
+                form1.ShowDialog();
+            else
+            {
+                mymenu.name = DataManager.menulist[mymenu.rownum-1].name;
+                mymenu.price = DataManager.menulist[mymenu.rownum - 1].price;
+                mymenu.category = DataManager.menulist[mymenu.rownum - 1].category;
+            }
 
             DataManager.myList.Add(mymenu);
 
@@ -99,6 +107,7 @@ namespace test
 
         }
 
+
         private void userControl_burger_1_Load(object sender, EventArgs e)
         {
 
@@ -117,9 +126,16 @@ namespace test
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
+            this.gunaButton1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#d72300");
+            this.gunaButton5.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton4.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton6.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+
             flowLayoutPanel2.Visible = false;
             flowLayoutPanel3.Visible = false;
             flowLayoutPanel1.Visible = true;
+            flowLayoutPanel4.Visible = false;
             userControl_burger_1.Visible = false;
             userControl_burger_2.Visible = false;
             userControl_burger_3.Visible = false;
@@ -137,9 +153,17 @@ namespace test
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
+
+            this.gunaButton1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#d72300");
+            this.gunaButton2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton5.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton4.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton6.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+
             flowLayoutPanel2.Visible = false;
             flowLayoutPanel3.Visible = false;
             flowLayoutPanel1.Visible = true;
+            flowLayoutPanel4.Visible = false;
             userControl_burger_1.Visible = true;
             userControl_burger_2.Visible = true;
             userControl_burger_3.Visible = true;
@@ -200,11 +224,27 @@ namespace test
 
         private void gunaButton4_Click(object sender, EventArgs e)
         {
+            this.gunaButton1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton5.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton4.ForeColor = System.Drawing.ColorTranslator.FromHtml("#d72300");
+            this.gunaButton6.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
 
+            flowLayoutPanel2.Visible = false;
+            flowLayoutPanel1.Visible = false;
+            flowLayoutPanel3.Visible = false;
+            flowLayoutPanel4.Visible = true;
         }
 
         private void gunaButton6_Click(object sender, EventArgs e)
         {
+            this.gunaButton1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton5.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton4.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton6.ForeColor = System.Drawing.ColorTranslator.FromHtml("#d72300");
+
+            flowLayoutPanel4.Visible = false;
             flowLayoutPanel2.Visible = true;
             flowLayoutPanel1.Visible = false;
             flowLayoutPanel3.Visible = false;
@@ -212,6 +252,13 @@ namespace test
 
         private void gunaButton5_Click(object sender, EventArgs e)
         {
+            this.gunaButton1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton5.ForeColor = System.Drawing.ColorTranslator.FromHtml("#d72300");
+            this.gunaButton4.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+            this.gunaButton6.ForeColor = System.Drawing.ColorTranslator.FromHtml("#571c0c");
+
+            flowLayoutPanel4.Visible = false;
             flowLayoutPanel1.Visible=false;
             flowLayoutPanel2.Visible=false;
             flowLayoutPanel3.Visible = true;

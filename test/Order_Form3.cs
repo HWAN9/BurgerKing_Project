@@ -47,7 +47,7 @@ namespace test
             Locale store_obj = DataManager.myselect;
             menuForm1 = m;
 
-            if(DataManager.myList.Count>1)
+            if(DataManager.myList.Count > 1)
             {
                 gunaLabel26.Text = DataManager.myList[0].name + "외";
             }
@@ -141,6 +141,27 @@ namespace test
             connection.Close();
         }
 
+        private void insertOrder(string menu, string user_name, string hp, string sql_id)
+        {
+            var connectionString = "server=localhost;port=2421;user=root;database=burgerking;password=1234";
+            var connection = new MySqlConnection(connectionString);
+            string insertQuery = $"INSERT INTO ORDER_MENU(MENU, USER_NAME, HP, ID) VALUES ({menu}, {user_name}, {hp}, {sql_id})";
+
+            try
+            {
+                connection.Open();
+                //label3.Text = "Connected";
+
+                var command = new MySqlCommand(insertQuery, connection);
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                //label3.Text = "Disconnected";
+            }
+            connection.Close();
+        }
+
         private void gunaButton2_Click_1(object sender, EventArgs e)
         {
             Hide();
@@ -148,6 +169,14 @@ namespace test
             Order_Form2 orderForm2 = new Order_Form2();
             orderForm2.setText(session);
             orderForm2.ShowDialog();
+
+            string fullName = "";
+
+            foreach (var item in DataManager.myList)
+            {
+                fullName += item.name + ", ";
+            }
+            insertOrder(fullName, gunaLabel8.Text, gunaLabel9.Text, session);
             Close();
         }
 
@@ -169,6 +198,16 @@ namespace test
         private void gunaPictureBox3_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void gunaLabel26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLabel25_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
